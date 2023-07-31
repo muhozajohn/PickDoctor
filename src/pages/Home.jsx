@@ -5,9 +5,11 @@ import heroImg03 from "../assets/images/hero-img03.png";
 import icon01 from "../assets/images/icon01.png";
 import icon02 from "../assets/images/icon02.png";
 import icon03 from "../assets/images/icon03.png";
+import featureImg from "../assets/images/feature-img.png";
 import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
 import About from "../components/About/About";
+import ServicesList from "../components/Services/ServicesList";
 const Home = () => {
   return (
     <>
@@ -152,16 +154,62 @@ const Home = () => {
         <section>
           <div className="container">
             <div className="mx-auto xl:w-[470px]">
-              <h2 className="heading text-center">
-                Our Medical Services
-              </h2>
+              <h2 className="heading text-center">Our Medical Services</h2>
               <p className="text_para text-center">
                 World-class care for everyone. Our health System offers
                 unmatched, expert health care
               </p>
             </div>
+            <ServicesList />
           </div>
         </section>
+        {/* ======================== End Services ===================== */}
+
+        {/* ============================ Features ======================== */}
+        <section>
+          <div className="container">
+            <div className="flex flex-col items-center justify-between lg:flex-row ">
+              {/* ============== feature Content  =============== */}
+              <div className="xl:w-[670px]">
+                <h2 className="heading">
+                  Get virtual treatment <br /> anytime.
+                </h2>
+                <ul className="pl-4">
+                  <li className="text_para">
+                    1. Schedule the Appointment Directly
+                  </li>
+                  <li className="text_para">
+                    2. Search for your physician here, and contact their offece.
+                  </li>
+                  <li className="text_para">
+                    3. View our physician who are accepting new patients, use
+                    the online scheduling tool to select an appointment time
+                  </li>
+                </ul>
+                <Link to="/">
+                  <button className="btn">Learn More</button>
+                </Link>
+              </div>
+              {/* ==================== Image ================= */}
+              <div className="xl-[770px] relative z-10 mt-[50px] flex items-center justify-end lg:mt-0">
+                <img src={featureImg} alt="" className=" w-3/4 " />
+                <div className="absolute bottom-[50px] left-0 z-20 w-[150px] rounded-[10px] bg-white p-2 pb-3 md:bottom-[100px] md:left-5 lg:w-[248px] lg:px-4 lg:pb-[26px] lg:pt-4 ">
+                  <div className="flex items-center justify-center ">
+                    <div className="flex items-center gap-[6px] lg:gap-3 ">
+                      <p className="text-[10px] font-[600] leading-[10px] text-headingColor lg:text-[14px] lg:leading-5 ">
+                        Tue,24
+                      </p>
+                      <p className="text-[10px] font-[400] leading-[10px] text-textColor lg:text-[14px] lg:leading-5 ">
+                        10:00Am
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* ============================ Features End ======================== */}
       </>
     </>
   );
