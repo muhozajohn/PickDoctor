@@ -147,6 +147,21 @@ const Home = () => {
           </div>
         </section>
         <About />
+
+        {/* ======================== Services ===================== */}
+        <section>
+          <div className="container">
+            <div className="mx-auto xl:w-[470px]">
+              <h2 className="heading text-center">
+                Our Medical Services
+              </h2>
+              <p className="text_para text-center">
+                World-class care for everyone. Our health System offers
+                unmatched, expert health care
+              </p>
+            </div>
+          </div>
+        </section>
       </>
     </>
   );
