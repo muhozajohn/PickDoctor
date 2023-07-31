@@ -1,0 +1,155 @@
+import React from "react";
+import heroImg01 from "../assets/images/hero-img01.png";
+import heroImg02 from "../assets/images/hero-img02.png";
+import heroImg03 from "../assets/images/hero-img03.png";
+import icon01 from "../assets/images/icon01.png";
+import icon02 from "../assets/images/icon02.png";
+import icon03 from "../assets/images/icon03.png";
+import { Link } from "react-router-dom";
+import { BsArrowRight } from "react-icons/bs";
+import About from "../components/About/About";
+const Home = () => {
+  return (
+    <>
+      {/* ============== hero Section ============== */}
+      <>
+        <section className="hero-section pt=[60px] 2xl:h-[800px] ">
+          <div className="container">
+            <div className="flex flex-col items-center  justify-between gap-[90px] lg:flex-row">
+              {/* ====================== content ==================== */}
+              <div>
+                <div className="lg:w-[570px]">
+                  <h1 className="text-[36px] font-[800] leading-[46px] text-headingColor md:text-[60px] md:leading-[70px] ">
+                    We help patient live a health, longer life.
+                  </h1>
+                  <p className="text_para">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea
+                    aut amet tempore culpa reiciendis, numquam nobis cumque?
+                    Officiis deleniti recusandae repellat laborum facilis ea
+                    nihil. Voluptas culpa distinctio vitae perspiciatis.
+                  </p>
+                  <button className="btn">Request an Appointment</button>
+                </div>
+                {/* ================hero Counter ============== */}
+                <div className="mt-[30px] flex flex-col gap-5 lg:mt-[70px] lg:flex-row lg:items-center lg:gap-[30px]">
+                  <div>
+                    <h2 className="text-[30px] font-[700] leading-[56px] text-headingColor lg:text-[44px] lg:leading-[54px]">
+                      30+
+                    </h2>
+                    <span className="mt-[-14px] block h-2  w-[100px] rounded-full bg-yellowColor "></span>
+                    <p className="text_para">Years of Experience</p>
+                  </div>
+                  <div>
+                    <h2 className="text-[30px] font-[700] leading-[56px] text-headingColor lg:text-[44px] lg:leading-[54px]">
+                      15+
+                    </h2>
+                    <span className="mt-[-14px] block h-2  w-[100px] rounded-full bg-purpleColor "></span>
+                    <p className="text_para">Clinic Location</p>
+                  </div>
+                  <div>
+                    <h2 className="text-[30px] font-[700] leading-[56px] text-headingColor lg:text-[44px] lg:leading-[54px]">
+                      100%
+                    </h2>
+                    <span className="mt-[-14px] block h-2  w-[100px] rounded-full bg-irisBlueColor "></span>
+                    <p className="text_para">Patient Stisfaction</p>
+                  </div>
+                </div>
+              </div>
+              {/* ================ Hero Content =============== */}
+
+              <div className="flex justify-end gap-[30px] ">
+                <div>
+                  <img src={heroImg01} alt="" className=" w-full " />
+                </div>
+                <div className="mt-[30px]">
+                  <img src={heroImg02} alt="" className="mb-[30px] w-full" />
+                  <img src={heroImg03} alt="" className="w-full" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* ===================== end ofsection ==================== */}
+        <section>
+          <div className="container">
+            <div className="mx-auto lg:w-[470px] ">
+              <h2 className="heading text-center">
+                Providing the best medical services
+              </h2>
+              <p className="text_para text-center">
+                World-class care for everyone. Our health System offers
+                unmatched, expert health care
+              </p>
+            </div>
+            {/* <div className="mt-[30px] flex flex-col flex-wrap items-center justify-between gap-5 md:flex-row lg:mt-[55px] lg:gap-[30px] "></div> */}
+            <div className="mt-[30px] grid grid-cols-1 gap-5 md:grid-cols-2 lg:mt-[55px] lg:grid-cols-3 lg:gap-[30px] ">
+              <div className="px-5 py-[30px]">
+                <div className="flex items-center justify-center">
+                  <img src={icon01} alt="" />
+                </div>
+                <div className="mt-[30px]">
+                  <h2 className="text-center text-[26px]  font-[700] leading-9 text-headingColor ">
+                    Find Doctor
+                  </h2>
+                  <p className="mt-4 text-center text-[16px] font-[400] leading-7 text-textColor ">
+                    World-class care for everyone. Our health System offers
+                    unmatched, expert health care
+                  </p>
+                  <Link
+                    to="/doctors"
+                    className="group mx-auto mt-[30px] flex h-[44px] w-[44px] items-center justify-center rounded-full border border-solid border-[#181A1E] hover:border-none hover:bg-primaryColor "
+                  >
+                    <BsArrowRight className="h-5 w-6 group-hover:text-white" />
+                  </Link>
+                </div>
+              </div>
+              <div className="px-5 py-[30px]">
+                <div className="flex items-center justify-center">
+                  <img src={icon02} alt="" />
+                </div>
+                <div className="mt-[30px]">
+                  <h2 className="text-center text-[26px]  font-[700] leading-9 text-headingColor ">
+                    Find Location
+                  </h2>
+                  <p className="mt-4 text-center text-[16px] font-[400] leading-7 text-textColor ">
+                    World-class care for everyone. Our health System offers
+                    unmatched, expert health care
+                  </p>
+                  <Link
+                    to="/doctors"
+                    className="group mx-auto mt-[30px] flex h-[44px] w-[44px] items-center justify-center rounded-full border border-solid border-[#181A1E] hover:border-none hover:bg-primaryColor "
+                  >
+                    <BsArrowRight className="h-5 w-6 group-hover:text-white" />
+                  </Link>
+                </div>
+              </div>
+              <div className="px-5 py-[30px]">
+                <div className="flex items-center justify-center">
+                  <img src={icon03} alt="" />
+                </div>
+                <div className="mt-[30px]">
+                  <h2 className="text-center text-[26px]  font-[700] leading-9 text-headingColor ">
+                    Book Appointment
+                  </h2>
+                  <p className="mt-4 text-center text-[16px] font-[400] leading-7 text-textColor ">
+                    World-class care for everyone. Our health System offers
+                    unmatched, expert health care
+                  </p>
+                  <Link
+                    to="/doctors"
+                    className="group mx-auto mt-[30px] flex h-[44px] w-[44px] items-center justify-center rounded-full border border-solid border-[#181A1E] hover:border-none hover:bg-primaryColor "
+                  >
+                    <BsArrowRight className="h-5 w-6 group-hover:text-white" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <About />
+      </>
+    </>
+  );
+};
+
+export default Home;
