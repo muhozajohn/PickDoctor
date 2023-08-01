@@ -5,11 +5,16 @@ import heroImg03 from "../assets/images/hero-img03.png";
 import icon01 from "../assets/images/icon01.png";
 import icon02 from "../assets/images/icon02.png";
 import icon03 from "../assets/images/icon03.png";
+import videoIcon from "../assets/images/video-icon.png";
+import avatarIcon from "../assets/images/avatar-icon.png";
 import featureImg from "../assets/images/feature-img.png";
+import faqImg from "../assets/images/faq-img.png";
 import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
 import About from "../components/About/About";
 import ServicesList from "../components/Services/ServicesList";
+import DoctorList from "../components/Doctors/DoctorList";
+import FaqsList from "../components/Faqs/FaqsList";
 const Home = () => {
   return (
     <>
@@ -193,9 +198,9 @@ const Home = () => {
               {/* ==================== Image ================= */}
               <div className="xl-[770px] relative z-10 mt-[50px] flex items-center justify-end lg:mt-0">
                 <img src={featureImg} alt="" className=" w-3/4 " />
-                <div className="absolute bottom-[50px] left-0 z-20 w-[150px] rounded-[10px] bg-white p-2 pb-3 md:bottom-[100px] md:left-5 lg:w-[248px] lg:px-4 lg:pb-[26px] lg:pt-4 ">
-                  <div className="flex items-center justify-center ">
-                    <div className="flex items-center gap-[6px] lg:gap-3 ">
+                <div className="absolute bottom-[50px] left-0 z-20 w-[150px] rounded-[10px] bg-white p-2 pb-3 md:bottom-[100px] md:left-5  lg:left-0 lg:mb-[-3rem] lg:w-[248px] lg:px-4 lg:pb-[20px] lg:pt-4">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-[6px] lg:gap-3  ">
                       <p className="text-[10px] font-[600] leading-[10px] text-headingColor lg:text-[14px] lg:leading-5 ">
                         Tue,24
                       </p>
@@ -203,6 +208,20 @@ const Home = () => {
                         10:00Am
                       </p>
                     </div>
+                    <span className="flex h-5 w-5 items-center justify-center rounded bg-yellowColor px-[6px] py-1 lg:h-[34px] lg:w-[34px] lg:px-[9px] lg:py-3">
+                      <img src={videoIcon} alt="" />
+                    </span>
+                  </div>
+
+                  <div className=" w=[65px] mt-2 rounded-full bg-[#CCF0F3] px-2 py-1 text-[8px] font-[500] leading-[8px] text-irisBlueColor lg:mt-4 lg:w-[96px] lg:px-[10px] lg:py-[6px] lg:text-[12px] lg:leading-4 ">
+                    Consultation
+                  </div>
+
+                  <div className="mt-2 flex items-center gap-[6px] lg:mt-[18px] lg:gap-[10px]">
+                    <img src={avatarIcon} alt="" />
+                    <h4 className="text-[10px] font-[700] leading-3 text-headingColor lg:text-[16px] lg:leading-[22px]">
+                      Wayne Collins
+                    </h4>
                   </div>
                 </div>
               </div>
@@ -210,6 +229,40 @@ const Home = () => {
           </div>
         </section>
         {/* ============================ Features End ======================== */}
+        {/* ============================== OUR DOCTOR ======================== */}
+
+        <section>
+          <div className="container">
+            <div className="mx-auto xl:w-[470px]">
+              <h2 className="heading text-center">Our Great Doctors </h2>
+              <p className="text_para text-center">
+                World-class care for everyone. Our health System offers
+                unmatched, expert health care
+              </p>
+            </div>
+            <DoctorList />
+          </div>
+        </section>
+
+        {/* ============================== OUR DOCTOR END ======================== */}
+
+        {/* ======================= faqs ========================= */}
+        <section>
+          <div className="container">
+            <div className="flex justify-between gap-[50px] lg:gap-0">
+              <div className="hidden w-1/2 md:block">
+                <img src={faqImg} alt="" />
+              </div>
+              <div className="w-full md:w-1/2">
+                <div className="heading">
+                  Most questions by our beloved patients
+                </div>
+                <FaqsList />
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* ======================= faqs End ========================= */}
       </>
     </>
   );
