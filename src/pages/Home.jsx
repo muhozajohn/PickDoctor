@@ -13,8 +13,9 @@ import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
 import About from "../components/About/About";
 import ServicesList from "../components/Services/ServicesList";
-import DoctorList from "../components/Doctors/DoctorList";
 import FaqsList from "../components/Faqs/FaqsList";
+import DoctorList from "../components/Doctors/DoctorList";
+import Testimonial from "../components/Testimonial/Testimonial";
 const Home = () => {
   return (
     <>
@@ -263,6 +264,22 @@ const Home = () => {
           </div>
         </section>
         {/* ======================= faqs End ========================= */}
+        {/* =============================== Testimoniols ================================*/}
+
+        <section>
+          <div className="container">
+            <div className="mx-auto xl:w-[470px]">
+              <h2 className="heading text-center">What our patients say</h2>
+              <p className="text_para text-center">
+                World-class care for everyone. Our health System offers
+                unmatched, expert health care
+              </p>
+            </div>
+            <Testimonial />
+          </div>
+        </section>
+
+        {/* ===============================Testimoniols end ================================*/}
       </>
     </>
   );

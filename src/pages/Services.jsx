@@ -1,9 +1,11 @@
-import React from 'react'
+import ServicesList from "../components/Services/ServicesList";
 
 const Services = () => {
   return (
-    <div>Services</div>
-  )
-}
+    <div className="container">
+      <ServicesList />
+    </div>
+  );
+};
 
-export default Services
+export default Services;
