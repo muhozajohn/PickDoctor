@@ -10,7 +10,7 @@ import {
 } from "react-icons/ai";
 const socialinks = [
   {
-    path: "https://www.pickdoctor.vercel.app",
+    path: "https://www.youtube.com/channel/UCNXBfZ5RW_DFFopjuEHjp0A",
     icon: <AiFillYoutube className=" h-5 w-4 group-hover:text-white " />,
   },
   {
@@ -22,7 +22,7 @@ const socialinks = [
     icon: <AiOutlineInstagram className=" h-5 w-4 group-hover:text-white " />,
   },
   {
-    path: "https://www.linkedin.com/muhozajohn_2a",
+    path: "https://www.linkedin.com/in/muhoza-john-26077824a/",
     icon: <RiLinkedinFill className=" h-5 w-4 group-hover:text-white " />,
   },
 ];
