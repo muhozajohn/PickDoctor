@@ -1,9 +1,14 @@
-import React from 'react'
+import DoctorList from "../../components/Doctors/DoctorList";
+import Testimonial from "../../components/Testimonial/Testimonial";
 
 const Doctors = () => {
   return (
-    <div>Doctors</div>
-  )
-}
+    <div className="container">
+      <DoctorList />
 
-export default Doctors
+      <Testimonial />
+    </div>
+  );
+};
+
+export default Doctors;
